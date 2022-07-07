@@ -1,0 +1,16 @@
+export interface Person {
+  person: PersonData;
+}
+
+export interface PersonData {
+  id: string;
+  name: string;
+  height: string;
+  mass: string;
+  hair_color: string;
+  skin_color: string;
+  eye_color: string;
+  gender: string;
+}
+
+export interface People extends Array<PersonData> {}
